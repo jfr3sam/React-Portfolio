@@ -38,7 +38,7 @@ export default function Avatar() {
   return (
     <div className="bg-gray-900 text-white min-h-screen flex flex-col justify-center items-center p-4">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center md:mx-16 lg:mx-32">
-        <div className="p-8 order-2 md:order-1 mt-24">
+        <div className="p-8 order-2  mt-24 md:order-1">
           {" "}
           <h1 className="font-bold mb-6 text-teal-500 text-4xl md:text-5xl">
             {t("welcoming_message")}

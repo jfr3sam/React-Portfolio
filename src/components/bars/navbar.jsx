@@ -42,7 +42,7 @@ export default function Navbar() {
       className="bg-white opacity dark:bg-gray-900 mt-8 rounded-2xl fixed z-20 border-b border-gray-200 dark:border-gray-600"
       style={{ width: "90%", marginLeft: "5%", marginRight: "5%" }}
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-2 pb-2 pr-4 pl-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-2 pb-2 pr-8 pl-8">
         <Link
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -52,17 +52,17 @@ export default function Navbar() {
             {t("my_name")}
           </span>
         </Link>
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div className="flex md:order-2 space-x-4 md:space-x-0 rtl:space-x-reverse">
           <div className="flex items-center">
             <button
               type="button"
               onClick={handleLanguageSwitch}
-              className="px-4 py-2 text-center flex flex-col items-center"
+              className="px-4 py-4 text-center flex items-center bg-red"
             >
               <FontAwesomeIcon icon={faGlobe} className="globe-icon" />
-              <span className="mt-0">
+              {/* <span className="mt-0">
                 {i18n.language === "en" ? "العربية" : "English"}
-              </span>
+              </span> */}
             </button>
           </div>
 
